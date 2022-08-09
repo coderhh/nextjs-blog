@@ -4,8 +4,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Yehang Han'
-export const siteTitle = 'Next.js Blog Website'
+const name = 'SpaceX'
+export const siteTitle = 'SpaceX Blog Website'
 
 export default function Layout({
     children,
@@ -36,7 +36,7 @@ export default function Layout({
                     <>
                         <Image
                             priority
-                            src="/images/profile.jpg"
+                            src="/images/starship.jpg"
                             className={utilStyles.borderCircle}
                             height={144}
                             width={144}
@@ -50,7 +50,7 @@ export default function Layout({
                             <a>
                                 <Image
                                     priority
-                                    src="/images/profile.jpg"
+                                    src="/images/starship.jpg"
                                     className={utilStyles.borderCircle}
                                     height={108}
                                     width={108}
