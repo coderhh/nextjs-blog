@@ -4,7 +4,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
     "date-fns": "^2.29.1",
@@ -18,8 +23,14 @@
   "devDependencies": {
     "@types/node": "^18.6.4",
     "@types/react": "^18.0.17",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
     "eslint": "^8.21.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-config-next": "12.2.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "2.7.1",
     "typescript": "^4.7.4"
   }
 }

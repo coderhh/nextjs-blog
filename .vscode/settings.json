@@ -1,4 +1,18 @@
 {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": false
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true
+  },
+  "cSpell.words": [
+    "Fassets",
+    "Fdesign",
+    "Ffront",
+    "Fimage",
+    "Fnextjs",
+    "Fupload",
+    "spacex"
+  ]
 }
